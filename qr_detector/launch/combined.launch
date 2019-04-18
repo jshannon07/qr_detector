@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<include file="$(find qr_detector)/launch/kinect_launch.launch">
+	</include>
+	<include file="$(find qr_detector)/launch/detector.launch">
+	</include> 
+	<node pkg="qr_detector" type="conf_move.py" name="conf_move" output="screen">
+	</node>
+</launch>

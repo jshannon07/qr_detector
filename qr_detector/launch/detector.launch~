@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="nodelet" type="nodelet" name="qr_detector"
+          args="standalone qr_detector/qr_detector_nodelet">
+        <remap from="image" to="kinect/rgb/image_raw"/>
+    </node>
+    <node pkg="conf_move" type="conf_move" name="conf_move">
+    </node>
+</launch>
